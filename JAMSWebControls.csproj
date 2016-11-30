@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7003D026-98CF-4F52-89A0-A6FAD6AC6CCF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVPSI.JAMSWeb.Controls</RootNamespace>
+    <AssemblyName>JAMSWebControls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\CommonBin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <ResGenToolArchitecture>Managed32Bit</ResGenToolArchitecture>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\CommonBin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\CommonBin\Release\JAMSWebControls.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.7.725, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>AjaxControlToolkit\7.0725\3.5\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.Charts.v15.2.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.2.UI, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.DataAccess.v15.2.UI.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v15.2.Core, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.Dashboard.v15.2.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v15.2.Web, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.Dashboard.v15.2.Web.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.Data.v15.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalReferences\DevExpress.DataAccess.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Map.v15.2.Core, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.Map.v15.2.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalReferences\DevExpress.Office.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.PivotGrid.v15.2.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.Printing.v15.2.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.RichEdit.v15.2.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.Sparkline.v15.2.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.Utils.v15.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v15.2, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.Web.v15.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.Xpo.v15.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.XtraCharts.v15.2.Wizard.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.XtraCharts.v15.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.XtraGauges.v15.2.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Presets, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.XtraGauges.v15.2.Presets.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Win, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.XtraGauges.v15.2.Win.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v15.2, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.XtraMap.v15.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.XtraPrinting.v15.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.Utils.v15.2.UI.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.XtraReports.v15.2.Extensions.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\ExternalReferences\DevExpress.XtraReports.v15.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Management.Automation\v4.0_3.0.0.0__31bf3856ad364e35\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\AssemblyCommon.cs">
+      <Link>AssemblyCommon.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Preferences.cs">
+      <Link>Preferences.cs</Link>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.cs" />
+    <Compile Include="History\History.cs" />
+    <Compile Include="History\HistoryColumn.cs" />
+    <Compile Include="History\HistoryControlDesigner.cs" />
+    <Compile Include="History\HistoryDataSource.cs" />
+    <Compile Include="History\HistoryDataSourceView.cs" />
+    <Compile Include="History\HistoryDialog.cs" />
+    <Compile Include="Monitor\MonitorAction.cs" />
+    <Compile Include="Monitor\MonitorColumnType.cs" />
+    <Compile Include="Monitor\Monitor.cs" />
+    <Compile Include="History\QueryInfo.cs" />
+    <Compile Include="Monitor\MonitorColumn.cs" />
+    <Compile Include="Monitor\MonitorColumnConverter.cs" />
+    <Compile Include="Monitor\MonitorControlDesigner.cs" />
+    <Compile Include="Monitor\MonitorDataSource.cs" />
+    <Compile Include="Monitor\MonitorDataSourceView.cs" />
+    <Compile Include="Monitor\MonitorDialog.cs" />
+    <Compile Include="Monitor\StateTypeConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubmitDialog\SubmitDialog.cs" />
+    <Compile Include="Common\ControlsCommon.cs" />
+    <Compile Include="SubmitDialog\SubmitDialogDesigner.cs" />
+    <Compile Include="SubmitMenu\SubmitMenu.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SubmitMenu\SubmitMenu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JAMSPSCommon\JAMSPSCommon.csproj">
+      <Project>{a9d52976-26cb-4407-a9f8-f8899b0cb25c}</Project>
+      <Name>JAMSPSCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JAMSShr\JAMSShr.csproj">
+      <Project>{49CCE8B1-B243-465B-9D75-748A0E5B3EC1}</Project>
+      <Name>JAMSShr</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AjaxControlToolkit\AjaxControlToolkit.dll" />
+    <Content Include="AjaxControlToolkit\AjaxMin.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Resources\Job.png" />
+    <EmbeddedResource Include="Resources\Setup.png" />
+    <EmbeddedResource Include="Resources\System.png" />
+    <EmbeddedResource Include="Monitor\Monitor.js" />
+    <EmbeddedResource Include="Resources\LoadIcon.gif" />
+    <EmbeddedResource Include="Resources\JAMSLoadingStyles.css" />
+    <EmbeddedResource Include="History\History.js" />
+    <EmbeddedResource Include="SubmitDialog\JAMSSubmitStyles.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
